@@ -1,0 +1,251 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    -webkit-text-size-adjust: none
+    &::-webkit-scrollbar
+        width: 8px
+        height: 5px
+    &::-webkit-scrollbar-track
+        background: #fff
+    &::-webkit-scrollbar-thumb 
+        background-color: $color-active
+body
+    color: $black
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    font-family: 'OpenSans', sans-serif
+    line-height: normal
+a 
+    color: inherit
+    text-decoration: none
+    transition: 0.3s all
+    &:not(.no-hover)
+        &:hover, &.active
+            color: $color-active
+html, body 
+    &.fixed
+        overflow: hidden
+footer, main 
+    overflow: hidden
+main 
+    position: relative
+    display: flex
+    flex-direction: column
+    flex: 1
+img 
+    max-width: 100%
+    max-height: 100%
+    width: auto
+    height: auto
+    object-fit: contain
+.container
+    position: relative
+    margin: 0 auto
+    width: 1296px
+.img
+    &_bg
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 0
+        pointer-events: none
+.elem
+    &_animate 
+        transition: 0.5s all
+        &:not(.opacity)
+            transform: rotateX(90deg)
+        &.opacity
+            opacity: 0
+            &.anim 
+                opacity: 1
+        &:not(.opacity)
+            &.anim
+                transform: rotateX(00deg)
+        &.left, &.right, &.top, &.bott
+            transition: 0.7s all
+            opacity: 0
+            &.anim 
+                opacity: 1
+        &.top
+            transform: translate3d(0, 60px, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.bott
+            transform: translate3d(0, -60px, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.right
+            transform: translate3d(-60px, 0, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.left
+            transform: translate3d(60px, 0, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.custom 
+            transform: none
+            &.anim 
+                transform: none
+h1
+    margin: 0
+    font-size: 36px
+    font-weight: 600
+h2
+    font-size: 32px
+    font-weight: 600
+h3
+    font-size: 28px
+    font-weight: 600
+h4 
+    font-size: 24px
+    font-weight: 600
+h5 
+    font-size: 22px
+    font-weight: 600
+h6 
+    font-size: 18px
+    font-weight: 600
+.default-content
+    h2, h3, h4, h5, h6 
+        margin: 40px 0px 20px
+        &:first-child
+            margin-top: 0 !important
+        &:last-child
+            margin-bottom: 0 !important
+    p 
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0 !important
+    ul, ol 
+        padding-left: 20px
+        margin: 10px 0px
+    table 
+        margin: 10px 0px
+        border-collapse: collapse
+        max-width: 100%
+        tr 
+            td 
+                padding: 20px
+                border: 1px solid $black
+                &:first-child
+                    border-left: none
+                    padding-left: 10px
+                &:last-child
+                    border-right: none 
+                    padding-right: 10px
+            &:first-child
+                td 
+                    border-top: none
+                    padding-top: 10px
+            &:last-child
+                td 
+                    border-bottom: none
+                    padding-bottom: 10px
+    a 
+        text-decoration: underline
+.text 
+    &_animate
+        position: relative
+        .or
+            position: relative
+            display: inline
+            opacity: 0
+            bottom: -14px
+            font-style: inherit
+        &.anim
+            .or
+                opacity: 1
+                bottom: 0px
+    &_normal
+        font-style: normal
+    &_italic
+        font-style: italic
+    &_center
+        text-align: center
+    &_black
+        color: $black
+    &_color
+        color: $color
+    &_white
+        color: #fff
+    &_underline
+        text-decoration: underline
+    &_upper 
+        text-transform: uppercase
+    &_ff 
+        &OS
+            font-family: 'OpenSans', sans-serif
+        &Rob
+            font-family: 'Roboto', 'OpenSans', sans-serif
+    &_fw 
+        &300
+            font-weight: 300
+        &400
+            font-weight: 400
+        &500
+            font-weight: 500
+        &600
+            font-weight: 600
+        &700
+            font-weight: 700
+    &_fz
+        &14
+            font-size: 14px
+        &15
+            font-size: 15px
+        &16
+            font-size: 16px
+        &18
+            font-size: 18px
+        &19
+            font-size: 19px
+        &20
+            font-size: 20px
+        &24
+            font-size: 24px
+        &28
+            font-size: 28px
+        &32
+            font-size: 32px
+        &36
+            font-size: 36px
+        &46
+            font-size: 46px
+        &64
+            font-size: 64px
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    outline: none
+    border: none
+    background: $color
+    border-radius: 32px
+    padding: 15px 40px
+    transition: 0.3s all
+    color: #fff !important
+    font-weight: 600
+    cursor: pointer
+    width: fit-content
+    img 
+        width: 24px
+        min-width: 24px
+        margin-left: 10px
+    &:hover, .active 
+        background: $color-active
+    &.short 
+        padding: 8px 20px
+    &.white 
+        background: #fff
+        border: 2px solid #fff
+        color: $color !important
+        &:hover, .active
+            background: none 
+            color: #fff !important
