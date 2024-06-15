@@ -195,6 +195,8 @@ h6
         &700
             font-weight: 700
     &_fz
+        &12
+            font-size: 12px
         &14
             font-size: 14px
         &15
@@ -238,6 +240,11 @@ h6
         width: 24px
         min-width: 24px
         margin-left: 10px
+        transition: 0.3s all
+        filter: brightness(0) invert(1)
+    &.loading 
+        opacity: 0.5
+        pointer-events: none
     &:hover, .active 
         background: $color-active
     &.short 
@@ -246,6 +253,28 @@ h6
         background: #fff
         border: 2px solid #fff
         color: $color !important
+        padding: 12px 40px
+        img 
+            filter: none
         &:hover, .active
             background: none 
             color: #fff !important
+            img 
+                filter: brightness(0) invert(1)
+.global-arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    background: $color
+    border-radius: 100%
+    transition: 0.3s all
+    width: 44px
+    height: 44px
+    img 
+        pointer-events: none
+    &.left 
+        img 
+            transform: rotate(180deg)
+    &:hover 
+        background: $color-active

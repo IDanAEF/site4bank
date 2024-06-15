@@ -17,9 +17,12 @@
     <title><?php $APPLICATION->ShowTitle() ?></title>
 
     <?php
+        $assetInstance->addCss(SITE_TEMPLATE_PATH."/assets/css/jquery.fancybox.min.css");
         $assetInstance->addCss(SITE_TEMPLATE_PATH."/assets/css/style.min.css");
         $assetInstance->addCss(SITE_TEMPLATE_PATH."/custom.css");
 
+        CJSCore::Init(array("jquery"));
+        $assetInstance->addJs(SITE_TEMPLATE_PATH."/assets/js/jquery.fancybox.min.js");
         $assetInstance->addJs(SITE_TEMPLATE_PATH."/assets/js/script.js");
         $assetInstance->addJs(SITE_TEMPLATE_PATH."/custom.js");
     ?>

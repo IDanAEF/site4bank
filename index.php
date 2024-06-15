@@ -188,6 +188,73 @@
             </a>
         </div>
     </section>
+    <?php $APPLICATION->IncludeFile(SITE_DIR."include/reviews.php", [], ["MODE" => "php"]) ?>
+    <section class="home__get page__block pt100">
+        <div class="container">
+            <div class="home__get-title page__block-title text_fz18">
+                <h2 class="text_fz36 text_color">Cоответствует ли ваш сайт банка современным требованиям?</h2>
+                <p>Получите бесплатно чек-лист для проверки сайта и/или наше исследование «Тренды банковских сайтов» и узнайте соответствует ли ваш сайт банка современным требованиям.</p>
+            </div>
+            <form action="" class="home__get-list form text_white">
+                <div class="home__get-text">
+                    <h4>Оставьте email и мы вышлем вам файл</h4>
+                    <div class="form-checks text_fz18 text_fw600">
+                        <h6>Что вы хотите получить?</h6>
+                        <label class="form-checks-item">
+                            <input type="checkbox" name="thing" value="Чек-лист современного сайта банка">
+                            <div class="dot"></div>
+                            <span>Чек-лист современного сайта банка</span>
+                        </label>
+                        <label class="form-checks-item">
+                            <input type="checkbox" name="thing" value="Тренды современных банковских сайтов">
+                            <div class="dot"></div>
+                            <span>Тренды современных банковских сайтов</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="home__get-fields">
+                    <label class="form-label">
+                        <input type="text" name="feedname" placeholder="Имя" required>
+                    </label>
+                    <label class="form-label">
+                        <input type="email" name="feedemail" placeholder="Email" required>
+                    </label>
+                    <div class="form-label">
+                        <button class="btn text_fz20 white">
+                            <span>Отправить</span>
+                            <img src="<?=IMAGES_PATH?>icons/arrow-small.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="form-ps text_fz12 text_center">
+                        Нажимая «Отправить», вы соглашаетесь с <a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="home__materials page__block pb100">
+        <div class="container">
+            <div class="page__block-title">
+                <h2 class="text_fz36 text_color">Материалы о нас</h2>
+            </div>
+            <div class="home__materials-list">
+                <div class="home__materials-item">
+                    <img src="<?=IMAGES_PATH?>materials1.svg" alt="">
+                    <h4>Решения для банков</h4>
+                    <a href="" class="btn text_fz18">
+                        <span>Смотреть</span>
+                    </a>
+                </div>
+                <div class="home__materials-item">
+                    <img src="<?=IMAGES_PATH?>materials2.svg" alt="">
+                    <h4>Портфолио</h4>
+                    <a href="" class="btn text_fz18">
+                        <span>Смотреть</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="home__news page__block half">
         <div class="container">
             <div class="page__block-title">
@@ -218,39 +285,7 @@
             </a>
         </div>
     </section>
-    <section class="home__feedback page__block pt100">
-        <div class="container">
-            <div class="home__feedback-title">
-                <h2 class="text_fz36 text_color">Давайте обсудим ваш проект</h2>
-                <span>Оставьте заявку и мы свяжемся с вами в ближайшее время для обсуждения деталей</span>
-            </div>
-            <form action="" class="home__feedback-form form">
-                <div class="form-row">
-                    <label class="form-label">
-                        <span class="text_fz18 tetx_fw600">Ваше имя</span>
-                        <input type="text" name="feedname" placeholder="Иван Иванов" required>
-                    </label>
-                    <label class="form-label">
-                        <span class="text_fz18 tetx_fw600">Телефон</span>
-                        <input type="tel" name="feedphone" placeholder="+7 (___) ___-__-__" required>
-                    </label>
-                    <label class="form-label">
-                        <span class="text_fz18 tetx_fw600">Email</span>
-                        <input type="email" name="feedemail" placeholder="Email" required>
-                    </label>
-                    <div class="form-label">
-                        <button class="btn text_fz20">
-                            <span class="text_fw700">Отправить</span>
-                            <img src="<?=IMAGES_PATH?>icons/arrow-small.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="form-ps text_fz14 text_center">
-                    Нажимая «Отправить», вы соглашаетесь с <a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
-                </div>
-            </form>
-        </div>
-    </section>
-    <?php $APPLICATION->IncludeFile(SITE_DIR."include/sites.php", [], ["MODE" => "html"]) ?>
+    <?php $APPLICATION->IncludeFile(SITE_DIR."include/feedback.php", [], ["MODE" => "php"]) ?>
+    <?php $APPLICATION->IncludeFile(SITE_DIR."include/sites.php", [], ["MODE" => "php"]) ?>
 </main>
 <?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php"); ?>

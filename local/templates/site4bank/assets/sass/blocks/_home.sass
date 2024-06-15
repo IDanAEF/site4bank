@@ -174,3 +174,81 @@
             span 
                 max-width: 515px
                 margin-left: 100px
+    &__reviews
+        &-slider
+            padding: 0px 100px
+            position: relative
+            .global-arrow 
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                &.left 
+                    left: 36px
+                &.right 
+                    right: 36px
+        &-list 
+            overflow: hidden
+        &-track 
+            display: flex
+            width: fit-content
+        &-item 
+            display: flex
+            box-shadow: 0 4px 20px 0 rgba(34, 34, 34, 0.05)
+            margin-right: 30px
+            width: 194px
+            height: 278px
+            img 
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center top
+    &__materials
+        &-list 
+            display: grid
+            grid-template: auto / auto auto
+            gap: 50px
+            justify-content: center
+        &-item 
+            border-radius: 15px
+            padding: 30px 25px
+            position: relative
+            background: #eaf5ff
+            width: 526px
+            min-height: 212px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            h4 
+                margin-bottom: 20px
+            .btn 
+                margin-top: auto
+            img 
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                height: calc(100% - 30px)
+    &__get 
+        &-title 
+            max-width: 945px
+            h2 
+                max-width: 675px
+        &-list 
+            display: flex
+            padding: 30px 70px 30px 50px
+            border-radius: 10px
+            background: linear-gradient(132deg, #3697e7 29.17%, #17619f 100%)
+            .form
+                &-label, &-ps 
+                    width: 306px
+                    min-width: 306px
+        &-text 
+            display: flex
+            flex-direction: column
+            flex: 1
+            h4 
+                margin-bottom: 20px
+            .form-checks
+                margin-top: auto
+                h6 
+                    margin-bottom: 10px

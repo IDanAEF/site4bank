@@ -21,6 +21,19 @@ const forms = () => {
     return await res.text();
   }
   try {
+    const formChecks = document.querySelectorAll('.form-checks');
+    formChecks.forEach(field => {
+      const checks = field.querySelectorAll('.form-checks-item input');
+      checks.forEach(input => {
+        input.addEventListener('change', () => {
+          input.parentElement.classList.toggle('active');
+        });
+      });
+    });
+  } catch (e) {
+    console.log(e.stack);
+  }
+  try {
     const ajaxForms = document.querySelectorAll('.form');
     ajaxForms.forEach(form => {
       form.addEventListener('submit', e => {
@@ -214,6 +227,84 @@ const scrolling = () => {
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrolling);
 
+/***/ }),
+
+/***/ "./assets/es6/blocks/sliderSimple.js":
+/*!*******************************************!*\
+  !*** ./assets/es6/blocks/sliderSimple.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const sliderSimple = () => {
+  try {
+    const sliderField = document.querySelectorAll('.slider');
+    sliderField.forEach(slider => {
+      let sliderTrack = slider.querySelector('.slider-track'),
+        sliderList = slider.querySelector('.slider-list'),
+        slides = slider.querySelectorAll('.slide'),
+        slideWidth = 0,
+        slideRight = slider.querySelector('.right'),
+        slideLeft = slider.querySelector('.left'),
+        slideIndex = 0,
+        slidesCount = slides.length;
+      const getVisCount = () => {
+        if (window.innerWidth <= 576 && slider.getAttribute('data-mob-vis')) {
+          return +slider.getAttribute('data-mob-vis');
+        } else if (window.innerWidth <= 768 && slider.getAttribute('data-tablet-vis')) {
+          return +slider.getAttribute('data-tablet-vis');
+        } else if (window.innerWidth <= 1200 && slider.getAttribute('data-lap-vis')) {
+          return +slider.getAttribute('data-lap-vis');
+        } else if (slider.getAttribute('data-pc-vis')) {
+          return +slider.getAttribute('data-pc-vis');
+        }
+        return 1;
+      };
+      const slide = () => {
+        sliderTrack.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+      };
+      const moveRight = () => {
+        slideIndex + getVisCount() >= slidesCount ? slideIndex = 0 : slideIndex++;
+        slide();
+      };
+      const moveLeft = () => {
+        slideIndex <= 0 ? slideIndex = slidesCount - getVisCount() : slideIndex--;
+        slide();
+      };
+      const setSlideWidth = () => {
+        //slideWidth = slides[0].offsetWidth + +window.getComputedStyle(sliderTrack).gridColumnGap.replace('px', '');
+        slideWidth = slides[0].offsetWidth + +window.getComputedStyle(slides[0]).marginRight.replace('px', '');
+      };
+      sliderTrack.style.transition = 'transform 0.5s ease 0s';
+      setSlideWidth();
+      let startPos = 0;
+      sliderList.addEventListener('touchstart', e => {
+        startPos = e.changedTouches[0].screenX;
+      });
+      sliderList.addEventListener('touchend', e => {
+        if (startPos - e.changedTouches[0].screenX > 50) {
+          moveRight();
+        } else if (startPos - e.changedTouches[0].screenX < -50) {
+          moveLeft();
+        }
+      });
+      document.body.addEventListener('click', e => {
+        if (e.target == slideRight) moveRight();
+        if (e.target == slideLeft) moveLeft();
+      });
+      window.addEventListener("resize", () => {
+        setSlideWidth();
+      });
+    });
+  } catch (e) {
+    console.log(e.stack);
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sliderSimple);
+
 /***/ })
 
 /******/ 	});
@@ -280,7 +371,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_mask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocks/mask */ "./assets/es6/blocks/mask.js");
 /* harmony import */ var _blocks_scrolling__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/scrolling */ "./assets/es6/blocks/scrolling.js");
 /* harmony import */ var _blocks_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/forms */ "./assets/es6/blocks/forms.js");
-/* harmony import */ var _blocks_other__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/other */ "./assets/es6/blocks/other.js");
+/* harmony import */ var _blocks_sliderSimple__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/sliderSimple */ "./assets/es6/blocks/sliderSimple.js");
+/* harmony import */ var _blocks_other__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/other */ "./assets/es6/blocks/other.js");
+
 
 
 
@@ -290,7 +383,8 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_mask__WEBPACK_IMPORTED_MODULE_0__["default"])('input[type="tel"]');
   (0,_blocks_scrolling__WEBPACK_IMPORTED_MODULE_1__["default"])();
   (0,_blocks_forms__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  (0,_blocks_other__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_blocks_sliderSimple__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_blocks_other__WEBPACK_IMPORTED_MODULE_4__["default"])();
 });
 /******/ })()
 ;
