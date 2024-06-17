@@ -57,6 +57,7 @@
                 <button class="btn white short text_fz14">
                     <span>Оставить заявку</span>
                 </button>
+                <img src="<?=IMAGES_PATH?>icons/menu.svg" alt="" class="header__ham">
             </div>
         </div>
     </header>

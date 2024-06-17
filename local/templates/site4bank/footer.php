@@ -47,10 +47,12 @@
                     </a>
                     <div class="footer__pay">
                         <span>Принимаем к оплате</span>
-                        <img src="<?=IMAGES_PATH?>pay1.png" alt="">
-                        <img src="<?=IMAGES_PATH?>pay2.png" alt="">
-                        <img src="<?=IMAGES_PATH?>pay3.png" alt="">
-                        <img src="<?=IMAGES_PATH?>pay4.png" alt="">
+                        <div class="pays">
+                            <img src="<?=IMAGES_PATH?>pay1.png" alt="">
+                            <img src="<?=IMAGES_PATH?>pay2.png" alt="">
+                            <img src="<?=IMAGES_PATH?>pay3.png" alt="">
+                            <img src="<?=IMAGES_PATH?>pay4.png" alt="">
+                        </div>
                     </div>
                     <div class="footer__link">
                         <a href="/privacy/" class="no-hover">

@@ -31,25 +31,9 @@
                 <h3 class="text_fz46 text_fw700 text_upper text_color">разработчики специализированных решений</h3>
                 «1C-Битрикс: Банк» и «ABO.CMS:Банк», а так же типовых сайтов банков
             </div>
-            <div class="home__clients-right">
-                <div class="home__clients-list">
-                    <?php
-                        $clients = CIBlockElement::GetList(
-                            ["SORT" => "ASC"],
-                            ['IBLOCK_ID' => 9, 'ACTIVE' => 'Y', 'PROPERTY_PROEKT_VALUE' => 'Y', '!PROPERTY_LOGO' => false],
-                            false,
-                            ['nPageSize' => 15, 'iNumPage' => 1],
-                            ['PROPERTY_LOGO']
-                        );
-
-                        while($client = $clients->Fetch()) {
-                            ?>
-                            <a href="" class="home__clients-item">
-                                <img src="<?=CFile::GetPath($client['PROPERTY_LOGO_VALUE'])?>" alt="">
-                            </a>
-                            <?php
-                        }
-                    ?>
+            <div class="home__clients-right ajax-elems init" data-vis="15" data-block="9" data-type="logos">
+                <div class="home__clients-list ajax-elems-list">
+                    
                 </div>
                 <a href="/clients/" class="btn text_fz18">
                     <span>Наши клиенты</span>
@@ -118,7 +102,7 @@
                 </div>
             </div>
             <img src="<?=IMAGES_PATH?>redactions.png" alt="" class="home__redact-image">
-            <a href="" class="btn text_fz18 home__redact-btn">
+            <a href="/bank-cms/" class="btn text_fz18 home__redact-btn">
                 <span>Подробнее</span>
             </a>
 
@@ -133,10 +117,10 @@
                         <p>Шаблон сайта с базовым функционалом на платформах 1С-Битрикс и ABO.CMS, созданный с соблюдением всех требований российского законодательства, для максимально быстрого запуска</p>
                     </div>
                     <div class="home__variants-btns">
-                        <a href="" class="btn white short text_fz18">
+                        <a href="https://bitrix.site4bank.ru/" class="btn white short text_fz18" target="_blank">
                             <span>Сайт на 1С-Битрикс</span>
                         </a>
-                        <a href="" class="btn white short text_fz18">
+                        <a href="https://cms.site4bank.ru/" class="btn white short text_fz18" target="_blank">
                             <span>Сайт на ABO.CMS</span>
                         </a>
                     </div>
@@ -147,7 +131,7 @@
                         <p>Создание сложных многофункциональных веб-систем, задействующий передовые технологии, для персонализации сайта вашего банка</p>
                     </div>
                     <div class="home__variants-btns">
-                        <a href="" class="btn white short text_fz18">
+                        <a href="/cases/" class="btn white short text_fz18">
                             <span>Примеры проектов</span>
                         </a>
                     </div>
@@ -155,33 +139,13 @@
             </div>
         </div>
     </section>
-    <section class="home__cases page__block pb100">
+    <section class="home__cases page__block pb100 ajax-elems init" data-vis="15" data-block="9">
         <div class="container">
             <div class="page__block-title">
                 <h2 class="text_fz36 text_color">Проекты</h2>
             </div>
-            <div class="home__cases-list text_fz15 text_fw300 text_white text_center">
-                <?php
-                    $cases = CIBlockElement::GetList(
-                        ["SORT" => "ASC"],
-                        ['IBLOCK_ID' => 9, 'ACTIVE' => 'Y', 'PROPERTY_PROEKT_VALUE' => 'Y', '!PREVIEW_PICTURE' => false],
-                        false,
-                        ['nPageSize' => 15, 'iNumPage' => 1],
-                        ['PROPERTY_PROEKT_ANONS', 'PROPERTY_PROEKT_NAME', 'PREVIEW_PICTURE']
-                    );
-
-                    while($case = $cases->Fetch()) {
-                        ?>
-                        <a href="" class="home__cases-item no-hover">
-                            <img src="<?=CFile::GetPath($case['PREVIEW_PICTURE'])?>" alt="" class="img_bg">
-                            <div class="text">
-                                <span class="text_fz19 text_fw600"><?=$case['PROPERTY_PROEKT_NAME_VALUE']?></span>
-                                <?=$case['PROPERTY_PROEKT_ANONS_VALUE']?>
-                            </div>
-                        </a>
-                        <?php
-                    }
-                ?>
+            <div class="home__cases-list text_fz15 text_fw300 text_white text_center ajax-elems-list">
+                
             </div>
             <a href="/cases/" class="btn text_fz18">
                 <span>Смотреть все</span>
@@ -241,44 +205,27 @@
                 <div class="home__materials-item">
                     <img src="<?=IMAGES_PATH?>materials1.svg" alt="">
                     <h4>Решения для банков</h4>
-                    <a href="" class="btn text_fz18">
+                    <a href="/upload/iblock/2bd/h23twy96k4haqanthvi495w6dr4nl5ll.pdf" class="btn text_fz18" target="_blank">
                         <span>Смотреть</span>
                     </a>
                 </div>
                 <div class="home__materials-item">
                     <img src="<?=IMAGES_PATH?>materials2.svg" alt="">
                     <h4>Портфолио</h4>
-                    <a href="" class="btn text_fz18">
+                    <a href="/upload/iblock/69e/zqpyz7qznok0k1gtm75fyuv7bd4pa1tu.pdf" class="btn text_fz18" target="_blank">
                         <span>Смотреть</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="home__news page__block half">
+    <section class="home__news page__block half ajax-elems init" data-vis="3" data-block="9" data-type="news">
         <div class="container">
             <div class="page__block-title">
                 <h2 class="text_fz36 text_color">Новости</h2>
             </div>
-            <div class="home__news-list text_fz18 text_center">
-                <?php
-                    $cases = CIBlockElement::GetList(
-                        ["SORT" => "ASC"],
-                        ['IBLOCK_ID' => 9, 'ACTIVE' => 'Y', 'PROPERTY_NEWS_VALUE' => 'Y', '!PREVIEW_PICTURE' => false],
-                        false,
-                        ['nPageSize' => 3, 'iNumPage' => 1],
-                        ['NAME', 'PREVIEW_PICTURE']
-                    );
-
-                    while($case = $cases->Fetch()) {
-                        ?>
-                        <a href="" class="home__news-item">
-                            <img src="<?=CFile::GetPath($case['PREVIEW_PICTURE'])?>" alt="">
-                            <?=$case['NAME']?>
-                        </a>
-                        <?php
-                    }
-                ?>
+            <div class="home__news-list text_fz18 text_center ajax-elems-list">
+                
             </div>
             <a href="/news/" class="btn text_fz18">
                 <span>Смотреть все</span>

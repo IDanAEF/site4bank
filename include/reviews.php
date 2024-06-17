@@ -3,7 +3,7 @@
         <div class="page__block-title">
             <h2 class="text_fz36 text_color">Отзывы</h2>
         </div>
-        <div class="home__reviews-slider slider" data-pc-vis="5">
+        <div class="home__reviews-slider slider" data-pc-vis="5" data-lap-vis="4" data-large-vis="3" data-tablet-vis="2" data-mob-vis="1">
             <span class="global-arrow left">
                 <img src="<?=IMAGES_PATH?>icons/arrow.svg" alt="">
             </span>

@@ -4,7 +4,7 @@
             <h2 class="text_fz36 text_color">Давайте обсудим ваш проект</h2>
             <span>Оставьте заявку и мы свяжемся с вами в ближайшее время для обсуждения деталей</span>
         </div>
-        <form action="" class="home__feedback-form form">
+        <form action="/ajax/forms.php" class="home__feedback-form form">
             <div class="form-row">
                 <label class="form-label">
                     <span class="text_fz18 tetx_fw600">Ваше имя</span>

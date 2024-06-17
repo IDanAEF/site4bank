@@ -17,6 +17,8 @@ const sliderSimple = () => {
                     return +slider.getAttribute('data-mob-vis');
                 } else if (window.innerWidth <= 768 && slider.getAttribute('data-tablet-vis')) {
                     return +slider.getAttribute('data-tablet-vis');
+                } else if (window.innerWidth <= 992 && slider.getAttribute('data-large-vis')) {
+                    return +slider.getAttribute('data-large-vis');
                 } else if (window.innerWidth <= 1200 && slider.getAttribute('data-lap-vis')) {
                     return +slider.getAttribute('data-lap-vis');
                 } else if (slider.getAttribute('data-pc-vis')) {

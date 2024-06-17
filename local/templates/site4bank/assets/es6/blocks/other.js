@@ -9,6 +9,15 @@ const other = () => {
         document.querySelector('html').classList.remove('fixed');
     }
 
+    async function postData(url, data) {
+        let res = await fetch(url, {
+            method: "POST",
+            body: data
+        });
+
+        return await res.text();
+    }
+
     try {
         const modalsBtn = document.querySelectorAll('[data-modal]'),
               modalsField = document.querySelector('.modals'),
@@ -73,6 +82,52 @@ const other = () => {
         window.addEventListener('scroll', () => {
             setAnim(targetElem);
             setAnim(targetText);
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
+
+    try {
+        const ajaxElems = document.querySelectorAll('.ajax-elems');
+
+        ajaxElems.forEach(field => {
+            const ajaxBtn = field.querySelector('.ajax-elems-btn'),
+                  ajaxList = field.querySelector('.ajax-elems-list'),
+                  ajaxVis = +field.getAttribute('data-vis'),
+                  ajaxBlock = +field.getAttribute('data-block');
+
+            let ajaxType = field.getAttribute('data-type'),
+                page = ajaxBtn ? +(ajaxBtn.getAttribute('data-page') || 1) : 1;
+
+            const addList = () => {
+                ajaxBtn && ajaxBtn.classList.add('loading');
+
+                const formData = new FormData();
+                formData.append('page', page);
+                formData.append('block', ajaxBlock);
+                formData.append('vis', ajaxVis);
+
+                if (ajaxType) formData.append('type', ajaxType);
+
+                postData('/ajax/elems.php', formData)
+                .then((res) => {
+                    ajaxBtn && ajaxBtn.classList.remove('loading');
+
+                    ajaxList.innerHTML += res;
+                    
+                    if (ajaxBtn && ajaxList.querySelectorAll('.ajax-elems-item').length < page*ajaxVis)
+                        ajaxBtn.remove();
+                });
+            }
+
+            if (field.classList.contains('init'))
+                addList();
+
+            ajaxBtn && ajaxBtn.addEventListener('click', () => {
+                page++;
+
+                addList();
+            });
         });
     } catch (e) {
         console.log(e.stack);
