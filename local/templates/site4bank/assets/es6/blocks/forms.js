@@ -31,6 +31,13 @@ const forms = () => {
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 
+                const formData = new FormData(form),
+                      successModal = document.querySelector('.modal__success[data-name="'+form.getAttribute('data-success')+'"]');
+
+                postData(form.action, formData)
+                .then((res) => {
+                    successModal.classList.add('active');
+                });
             });
         });
     } catch (e) {

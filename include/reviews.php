@@ -8,7 +8,7 @@
                 <img src="<?=IMAGES_PATH?>icons/arrow.svg" alt="">
             </span>
             <div class="home__reviews-list slider-list">
-                <div class="home__reviews-track slider-track">
+                <div class="home__reviews-track slider-track lightbox-field">
                     <?php
                         $reviews = CIBlockElement::GetList(
                             ["SORT" => "ASC"],
@@ -25,7 +25,7 @@
                                 BX_RESIZE_IMAGE_EXACT
                             );
                             ?>
-                            <a href="<?=CFile::GetPath($review['PREVIEW_PICTURE'])?>" class="home__reviews-item slide" data-fancybox="reviews">
+                            <a href="<?=CFile::GetPath($review['PREVIEW_PICTURE'])?>" class="home__reviews-item slide lightbox-item">
                                 <img src="<?=$resizeReview['src']?>" alt="">
                             </a>
                             <?php

@@ -36,20 +36,20 @@
     while($block = $blocks->Fetch()) {
         if ($_POST['type'] == 'logos') {
             ?>
-            <a href="" class="home__clients-item ajax-elems-item">
+            <a href="" class="home__clients-item ajax-elems-item elem_animate top">
                 <img src="<?=CFile::GetPath($block['PROPERTY_LOGO_VALUE'])?>" alt="">
             </a>
             <?php
         } else if ($_POST['type'] == 'news') {
             ?>
-            <a href="" class="home__news-item ajax-elems-item">
+            <a href="" class="home__news-item ajax-elems-item elem_animate top">
                 <img src="<?=CFile::GetPath($block['PREVIEW_PICTURE'])?>" alt="">
                 <?=$block['NAME']?>
             </a>
             <?php
         } else if ($_POST['block'] == 9) {
             ?>
-            <a href="" class="home__cases-item no-hover ajax-elems-item">
+            <a href="" class="home__cases-item no-hover ajax-elems-item elem_animate top">
                 <img src="<?=CFile::GetPath($block['PREVIEW_PICTURE'])?>" alt="" class="img_bg">
                 <div class="text">
                     <span class="text_fz19 text_fw600"><?=$block['PROPERTY_PROEKT_NAME_VALUE']?></span>

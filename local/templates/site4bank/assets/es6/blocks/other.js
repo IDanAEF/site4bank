@@ -9,6 +9,31 @@ const other = () => {
         document.querySelector('html').classList.remove('fixed');
     }
 
+    const returnHeight = () => {
+        return window.innerWidth <= 600 ? window.innerHeight / 1.05 : window.innerHeight / 1.2
+    }
+
+    const setAnim = (mass) => {
+        mass.forEach(item => {
+            if (returnHeight() + window.scrollY >= item.getBoundingClientRect().y + window.scrollY) {
+                item.classList.add('anim');
+            }
+        });
+    }
+
+    function setCookie(name, value, hours) {
+        var expires;
+        if (hours || hours === 0) {
+            var date = new Date();
+            date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+            expires = "; expires=" + date.toGMTString();
+        }
+        else {
+            expires = "";
+        }
+        document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
+    }
+
     async function postData(url, data) {
         let res = await fetch(url, {
             method: "POST",
@@ -19,30 +44,17 @@ const other = () => {
     }
 
     try {
-        const modalsBtn = document.querySelectorAll('[data-modal]'),
-              modalsField = document.querySelector('.modals'),
-              modalsItems = modalsField.querySelectorAll('.modals__item');
+        const cookiesModal = document.querySelector('.modal__cookie');
 
-        modalsBtn.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
+        if (cookiesModal) {
+            setTimeout(() => cookiesModal.classList.add('active'), 2000);
 
-                modalsItems.forEach(item => item.classList.remove('active'));
-                modalsField.querySelector('#'+btn.getAttribute('data-modal').trim()).classList.add('active');
+            cookiesModal.querySelector('button').addEventListener('click', () => {
+                setCookie('cookie_agree', 1, 1000);
 
-                modalsField.classList.add('active');
-                hideScroll();
+                cookiesModal.classList.remove('active');
             });
-        });
-
-        modalsField.addEventListener('click', (e) => {
-            if (e.target == modalsField || e.target.classList.contains('modals__close')) {
-                modalsItems.forEach(item => item.classList.remove('active'));
-
-                modalsField.classList.remove('active');
-                showScroll();
-            }
-        });
+        }
     } catch (e) {
         console.log(e.stack);
     }
@@ -64,24 +76,35 @@ const other = () => {
             item.innerHTML = newInner;
         });
 
-        function returnHeight() {
-            return window.innerWidth <= 600 ? window.innerHeight / 1.05 : window.innerHeight / 1.2
-        }
-
-        function setAnim(mass) {
-            mass.forEach(item => {
-                if (returnHeight() + window.scrollY >= item.getBoundingClientRect().y + window.scrollY) {
-                    item.classList.add('anim');
-                }
-            });
-        }
-
         setAnim(targetElem);
         setAnim(targetText);
 
         window.addEventListener('scroll', () => {
             setAnim(targetElem);
             setAnim(targetText);
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
+
+    try {
+        const bodyClickContent = document.querySelectorAll('.body-click-content'),
+              bodyClickTarget = document.querySelectorAll('.body-click-target');
+
+        document.body.addEventListener('click', (e) => {
+            if (e.target.classList.contains('body-click-target') || e.target.classList.contains('body-click-close')) {
+                if (e.target.getAttribute('data-content')) 
+                    document.querySelector('.body-click-content[data-content="'+e.target.getAttribute('data-content')+'"]').classList.toggle('active');
+                else if (e.target.nextElementSibling.classList.contains('body-click-content'))
+                    e.target.nextElementSibling.classList.toggle('active');
+                else 
+                    e.target.parentElement.classList.remove('active');
+
+                !e.target.classList.contains('not-active') ? e.target.classList.toggle('active') : '';
+            } else if (!e.target.closest('.body-click-content')) {
+                bodyClickContent.forEach(item => !item.classList.contains('not-global') ? item.classList.remove('active') : '');
+                bodyClickTarget.forEach(item => !item.classList.contains('not-active') && !item.classList.contains('not-global') ? item.classList.remove('active') : '');
+            }
         });
     } catch (e) {
         console.log(e.stack);
@@ -97,7 +120,9 @@ const other = () => {
                   ajaxBlock = +field.getAttribute('data-block');
 
             let ajaxType = field.getAttribute('data-type'),
-                page = ajaxBtn ? +(ajaxBtn.getAttribute('data-page') || 1) : 1;
+                page = ajaxBtn ? +(ajaxBtn.getAttribute('data-page') || 1) : 1,
+                animates,
+                scrollSetted = false;
 
             const addList = () => {
                 ajaxBtn && ajaxBtn.classList.add('loading');
@@ -117,6 +142,17 @@ const other = () => {
                     
                     if (ajaxBtn && ajaxList.querySelectorAll('.ajax-elems-item').length < page*ajaxVis)
                         ajaxBtn.remove();
+
+                    if (ajaxList.querySelector('.elem_animate')) {
+                        animates = ajaxList.querySelectorAll('.elem_animate');
+
+                        setAnim(animates);
+
+                        if (!scrollSetted) {
+                            window.addEventListener('scroll', () => setAnim(animates));
+                            scrollSetted = true;
+                        }
+                    }
                 });
             }
 
@@ -127,6 +163,29 @@ const other = () => {
                 page++;
 
                 addList();
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
+
+    try {
+        const lightboxes = document.querySelectorAll('.lightbox-field');
+
+        lightboxes.forEach(field => {
+            const lightboxItems = field.querySelectorAll('.lightbox-item');
+
+            let lightbox = new FsLightbox();
+            lightbox.props.sources = [];
+
+            lightboxItems.forEach((item, i) => {
+                lightbox.props.sources.push(item.href);
+
+                item.addEventListener('click', e => {
+                    e.preventDefault();
+
+                    lightbox.open(i);
+                });
             });
         });
     } catch (e) {

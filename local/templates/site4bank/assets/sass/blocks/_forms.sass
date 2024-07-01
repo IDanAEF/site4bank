@@ -1,11 +1,13 @@
-input 
+input, textarea 
     outline: none
     border: 2px solid $color
     border-radius: 40px
     background: #fff
     padding: 15px 25px
-    &::placeholder
-        color: $color
+textarea
+    height: 148px
+    resize: none
+    border-radius: 20px
 .form
     &-label 
         display: block
@@ -15,7 +17,7 @@ input
         & > span 
             display: block
             margin-bottom: 15px
-        input, .btn 
+        input, .btn, textarea 
             width: 100%
     &-row 
         display: flex

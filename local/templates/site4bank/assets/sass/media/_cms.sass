@@ -1,0 +1,62 @@
+@media (max-width: 1200px)
+    .cms
+        &__block 
+            &-image 
+                width: 485px
+                height: 330px
+                margin-left: 20px
+            &-modules 
+                margin: 30px 0px
+@media (max-width: 992px)
+    .cms
+        &__top 
+            &-btns
+                margin-top: 20px
+        &__block 
+            &-image 
+                width: 370px
+                height: 300px
+            &-modules 
+                h4
+                    margin-bottom: 20px
+            &-text 
+                h4 
+                    margin-bottom: 10px
+                .btn 
+                    margin-top: 20px
+@media (max-width: 768px)
+    .cms
+        &__block 
+            &-info 
+                flex-direction: column
+            &-image 
+                width: 100%
+                margin-left: 0
+                margin-right: 10px
+                height: auto
+            &-text 
+                .btn 
+                    width: 100%
+            &-modules 
+                &-row 
+                    grid-template: auto / 1fr 1fr !important
+                &-col 
+                    & > span 
+                        margin-bottom: 10px
+@media (max-width: 576px)
+    .cms 
+        &__top 
+            &-btns 
+                flex-direction: column
+                .btn 
+                    margin-right: 0
+                    width: 100%
+                    margin-bottom: 10px
+                    &:last-child
+                        margin-bottom: 0 !important
+        &__block 
+            &-modules 
+                border-radius: 10px
+                padding: 20px 10px
+                &-row 
+                    grid-template: auto / 1fr !important

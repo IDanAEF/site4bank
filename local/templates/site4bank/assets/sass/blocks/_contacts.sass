@@ -1,0 +1,34 @@
+.contacts
+    &__map 
+        iframe, .map
+            height: 613px
+            width: 100%
+            border-radius: 10px
+    &__info 
+        &-row 
+            display: grid
+            grid-template: auto / 23% 1fr 1fr
+            gap: 30px
+        &-col 
+            & > span, & > a 
+                display: flex
+                align-items: center
+                margin-bottom: 25px
+                &:last-child
+                    margin-bottom: 0 !important
+                span 
+                    margin-left: 24px
+                    cursor: pointer
+                img 
+                    width: 29px
+                    height: 29px
+                    min-width: 29px
+                    margin-right: 15px
+        &-social 
+            & > span 
+                margin-bottom: 8px
+                display: block
+            .footer__social
+                display: flex !important
+                a 
+                    border: 1px solid #828282

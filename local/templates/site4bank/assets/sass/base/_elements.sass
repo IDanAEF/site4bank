@@ -125,10 +125,18 @@ h6
     ul, ol 
         padding-left: 20px
         margin: 10px 0px
+        &:first-child
+            margin-top: 0 !important
+        &:last-child
+            margin-bottom: 0 !important
     table 
         margin: 10px 0px
         border-collapse: collapse
         max-width: 100%
+        &:first-child
+            margin-top: 0 !important
+        &:last-child
+            margin-bottom: 0 !important
         tr 
             td 
                 padding: 20px
@@ -149,6 +157,26 @@ h6
                     padding-bottom: 10px
     a 
         text-decoration: underline
+.default-content, .styled-ul
+    ul 
+        padding-left: 0
+        list-style-type: none
+        li 
+            padding-left: 20px
+            position: relative
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0 !important
+            &::before 
+                content: ''
+                position: absolute
+                width: 10px
+                height: 10px
+                border-radius: 2px
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                background: $color
 .text 
     &_animate
         position: relative
@@ -238,6 +266,8 @@ h6
     font-weight: 600
     cursor: pointer
     width: fit-content
+    & > *
+        pointer-events: none
     img 
         width: 24px
         min-width: 24px
@@ -249,6 +279,14 @@ h6
         pointer-events: none
     &:hover, .active 
         background: $color-active
+    &.reverse
+        background: none
+        border: 2px solid $color
+        color: $color !important
+        padding: 12px 40px
+        &:hover, .active
+            background: $color
+            color: #fff !important
     &.white 
         background: #fff
         border: 2px solid #fff

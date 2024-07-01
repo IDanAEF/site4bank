@@ -17,12 +17,10 @@
     <title><?php $APPLICATION->ShowTitle() ?></title>
 
     <?php
-        $assetInstance->addCss(SITE_TEMPLATE_PATH."/assets/css/jquery.fancybox.min.css");
         $assetInstance->addCss(SITE_TEMPLATE_PATH."/assets/css/style.min.css");
         $assetInstance->addCss(SITE_TEMPLATE_PATH."/custom.css");
 
-        CJSCore::Init(array("jquery"));
-        $assetInstance->addJs(SITE_TEMPLATE_PATH."/assets/js/jquery.fancybox.min.js");
+        $assetInstance->addJs(SITE_TEMPLATE_PATH."/assets/js/fslightbox.js");
         $assetInstance->addJs(SITE_TEMPLATE_PATH."/assets/js/script.js");
         $assetInstance->addJs(SITE_TEMPLATE_PATH."/custom.js");
     ?>
@@ -38,10 +36,11 @@
             </a>
             <nav class="header__nav text_upper text_fw600">
                 <ul>
-                    <li><a href="/clients/" class="no-hover">Нам доверяют</a></li>
+                    <li><a href="/clients/" class="no-hover">Клиенты</a></li>
                     <li><a href="/cases/" class="no-hover">Проекты</a></li>
                     <li><a href="/bank-cms/" class="no-hover">CMS для Банков</a></li>
                     <li><a href="/news/" class="no-hover">Новости</a></li>
+                    <li><a href="/contacts/" class="no-hover">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header__right">
@@ -54,10 +53,39 @@
                         <img src="<?=IMAGES_PATH?>icons/whatsapp.svg" alt="">
                     </a>
                 </div>
-                <button class="btn white short text_fz14">
+                <button class="btn white short text_fz14 body-click-target" data-content="order">
                     <span>Оставить заявку</span>
                 </button>
-                <img src="<?=IMAGES_PATH?>icons/menu.svg" alt="" class="header__ham">
+                <img src="<?=IMAGES_PATH?>icons/menu.svg" alt="" class="header__ham body-click-target" data-content="header-modal">
             </div>
         </div>
     </header>
+    <div class="header__mobile body-click-content" data-content="header-modal">
+        <div class="modal__close body-click-close"></div>
+        <div class="header__mobile-nav">
+            <ul>
+                <li><a href="/clients/">Клиенты</a></li>
+                <li><a href="/cases/">Проекты</a></li>
+                <li><a href="/bank-cms/">CMS для Банков</a></li>
+                <li><a href="/news/">Новости</a></li>
+                <li><a href="/contacts/">Контакты</a></li>
+            </ul>
+        </div>
+        <button class="btn body-click-target" data-content="order">
+            <span>Оставить заявку</span>
+        </button>
+        <div class="header__mobile-social">
+            <a href="" target="_blank">
+                <img src="<?=IMAGES_PATH?>icons/skype-color.svg" alt="">
+            </a>
+            <a href="" target="_blank">
+                <img src="<?=IMAGES_PATH?>icons/telegram-color.svg" alt="">
+            </a>
+            <a href="" target="_blank">
+                <img src="<?=IMAGES_PATH?>icons/whatsapp-color.svg" alt="">
+            </a>
+            <a href="" target="_blank">
+                <img src="<?=IMAGES_PATH?>icons/mail-color.svg" alt="">
+            </a>
+        </div>
+    </div>

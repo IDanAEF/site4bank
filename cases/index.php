@@ -1,8 +1,8 @@
 <?php
     require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
     $APPLICATION->SetPageProperty("description", "");
-    $APPLICATION->SetPageProperty("title", "Решения для банков | Проекты");
-    $APPLICATION->SetTitle("Решения для банков | Проекты");
+    $APPLICATION->SetPageProperty("title", "Решения для банков | Наши проекты");
+    $APPLICATION->SetTitle("Решения для банков | Наши проекты");
 ?>
 <main class="cases">
     <section class="page__breadcrumbs text_fz16">

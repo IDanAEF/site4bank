@@ -58,17 +58,59 @@
                         <a href="/privacy/" class="no-hover">
                             Политика конфиденциальности
                         </a>
-                        <a href="#" class="no-hover">
+                        <a href="#" class="no-hover body-click-target" data-content="error">
                             Сообщить об ошибке
                         </a>
                     </div>
                 </div>
                 <div class="footer__copy text_fz14">
-                    © Site4Bank, ООО «АПП» 1999-<?=date('Y')?> <br>
-                    Все права защищены. Все торговые марки являются собственностью их правообладателей.
+                    <?php $APPLICATION->IncludeFile(SITE_DIR."include/copy.php", [], ["MODE" => "php"]) ?>
                 </div>
             </div>
         </div>
     </footer>
+
+    <?php 
+        $APPLICATION->IncludeFile(SITE_DIR."include/modal-form.php", [
+            'title' => 'Давайте обсудим ваш проект',
+            'descr' => 'Оставьте заявку и мы свяжемся с вами в ближайшее время для обсуждения деталей',
+            'success' => 'save',
+            'type' => 'order'
+        ], ["MODE" => "php"]);
+    ?>
+    <?php 
+        $APPLICATION->IncludeFile(SITE_DIR."include/modal-form.php", [
+            'title' => 'Сообщить об ошибке',
+            'descr' => '',
+            'success' => 'error',
+            'type' => 'error'
+        ], ["MODE" => "php"]);
+    ?>
+
+    <?php 
+        $APPLICATION->IncludeFile(SITE_DIR."include/success-modal.php", [
+            'title' => 'Данные сохранены',
+            'descr' => 'Ваши заявка успешно сохранена, и мы свяжемся с вами в ближайшее время',
+            'name' => 'save'
+        ], ["MODE" => "php"]);
+    ?>
+    <?php 
+        $APPLICATION->IncludeFile(SITE_DIR."include/success-modal.php", [
+            'title' => 'Спасибо',
+            'descr' => 'Мы уже получили ваше сообщение и&nbsp;приступили к исправлению ошибки',
+            'name' => 'error'
+        ], ["MODE" => "php"]);
+    ?>
+
+    <?php if (!isset($_COOKIE['cookie_agree'])) : ?>
+        <div class="modal__cookie modal__item text_fz18">
+            <span>
+                Мы используем <strong>cookies</strong>. Продолжая использовать наш сайт, вы соглашаетесь на обработку персональных данных.
+            </span>
+            <button class="btn">
+                <span>Согласен</span>
+            </button>
+        </div>
+    <?php endif; ?>
 </body>
 </html>

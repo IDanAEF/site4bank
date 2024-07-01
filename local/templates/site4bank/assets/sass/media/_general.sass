@@ -71,6 +71,9 @@
                 margin-bottom: 15px
                 &:last-child
                     margin-bottom: 0 !important
+    .modal
+        &__cookie
+            width: 740px
     .form
         &-label 
             margin-bottom: 10px
@@ -78,16 +81,38 @@
     .container
         width: 720px
     .btn 
-        padding: 10px 20px
+        padding: 10px 20px !important
         img 
             width: 20px
             min-width: 20px
-    input
+        &.short 
+            padding: 8px 20px !important
+    input, textarea
         padding: 10px 20px
+    .modal
+        &__close
+            width: 45px
+            height: 45px
+            padding: 15px
+        &__item 
+            width: 485px
     .form
         &-row 
             .form-label 
                 margin-right: 10px
+    .default-content
+        table 
+            tr 
+                td 
+                    padding: 10px
+                    &:first-child
+                        padding-left: 0
+                    &:last-child
+                        padding-right: 0
+    .default-content, .styled-ul
+        ul
+            li
+                margin-bottom: 10px
     main 
         padding-top: 65px
     .header
@@ -129,6 +154,8 @@
     .default-content
         h2, h3, h4, h5, h6 
             margin: 30px 0px 20px
+        table 
+            width: 100%
     .text
         &_fz 
             &20, &22
@@ -146,6 +173,21 @@
         height: 35px
         img 
             width: 19px
+    .header
+        &__mobile
+            width: 252px
+            padding: 30px 55px 30px 24px
+            button
+                width: 100%
+                font-size: 12px
+            &-nav
+                font-size: 16px
+                ul 
+                    li 
+                        margin-bottom: 10px
+            &-social 
+                a 
+                    height: 20px
     .form 
         &-row 
             flex-direction: column
@@ -164,6 +206,9 @@
         padding: 0px 12px
     main
         padding-top: 42px
+    textarea
+        height: 116px
+        border-radius: 10px
     .form
         &-checks 
             &-item 
@@ -172,6 +217,23 @@
                     width: 18px
                     height: 18px
                     min-width: 18px
+    .modal
+        &__item 
+            padding: 45px 14px
+            &-title 
+                text-align: left
+        &__success 
+            padding: 30px !important
+        &__cookie
+            padding: 30px 20px !important
+            flex-direction: column
+            button
+                width: 100%
+                margin-left: 0
+                margin-top: 20px
+    .default-content
+        table
+            font-size: 14px
     .header
         padding: 11px 0px
         &__right 
