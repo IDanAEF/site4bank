@@ -131,6 +131,7 @@ const other = () => {
                 formData.append('page', page);
                 formData.append('block', ajaxBlock);
                 formData.append('vis', ajaxVis);
+                formData.append('page-url', window.location.pathname);
 
                 if (ajaxType) formData.append('type', ajaxType);
 

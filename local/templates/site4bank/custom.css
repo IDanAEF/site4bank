@@ -1,0 +1,6 @@
+.state-wrap a:hover {
+    color: inherit;
+}
+.state-wrap img {
+    max-height: unset;
+}

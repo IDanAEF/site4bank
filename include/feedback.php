@@ -2,7 +2,7 @@
     <div class="container">
         <div class="home__feedback-title elem_animate bott">
             <h2 class="text_fz36 text_color">Давайте обсудим ваш проект</h2>
-            <span>Оставьте заявку и мы свяжемся с вами в ближайшее время для обсуждения деталей</span>
+            <span>Оставьте заявку и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время для&nbsp;обсуждения деталей</span>
         </div>
         <form action="/ajax/forms.php" class="home__feedback-form form elem_animate top" data-success="save">
             <input type="text" name="feedsection" value="1" hidden>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="form-ps text_fz14 text_center">
-                Нажимая «Отправить», вы соглашаетесь с <a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
+                Нажимая «Отправить», вы соглашаетесь с&nbsp;<a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
             </div>
         </form>
     </div>

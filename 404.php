@@ -14,10 +14,10 @@
         <div class="top-shadow short"></div>
         <div class="container">
             <h1 class="text_color">404</h1>
-            <h2 class="text_fz36 text_upper">Страница не найдена</h2>
-            <p>Вы неправильно набрали адрес или такой страницы больше не существует</p>
+            <h2 class="text_fz36 text_upper">Страница не&nbsp;найдена</h2>
+            <p>Вы неправильно набрали адрес или&nbsp;такой страницы больше не&nbsp;существует</p>
             <br>
-            <a href="/" class="text_fw500 text_underline">Вернуться на главную страницу</a>
+            <a href="/" class="text_fw500 text_underline">Вернуться на&nbsp;главную страницу</a>
         </div>
     </section>
 </main>

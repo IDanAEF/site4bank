@@ -34,17 +34,17 @@
                     </span>
                 </div>
                 <div class="contacts__info-social">
-                    <span class="text_fz20 text_fw600">Cвязаться с нами</span>
+                    <span class="text_fz20 text_fw600">Cвязаться с&nbsp;нами</span>
                     <div class="footer__social text_fz14">
-                        <a href="" target="_blank" class="no-hover">
+                        <a href="https://api.whatsapp.com/send/?phone=79858195517" target="_blank" class="no-hover">
                             <img src="<?=IMAGES_PATH?>icons/whatsapp-color.svg" alt="">
                             WhatsApp
                         </a>
-                        <a href="" target="_blank" class="no-hover">
+                        <a href="https://t.me/TG1CPoly_bot" target="_blank" class="no-hover">
                             <img src="<?=IMAGES_PATH?>icons/telegram-color.svg" alt="">
                             Telegram
                         </a>
-                        <a href="" target="_blank" class="no-hover">
+                        <a href="https://join.skype.com/invite/diCzxMjPi63M" target="_blank" class="no-hover">
                             <img src="<?=IMAGES_PATH?>icons/skype-color.svg" alt="">
                             Skype
                         </a>

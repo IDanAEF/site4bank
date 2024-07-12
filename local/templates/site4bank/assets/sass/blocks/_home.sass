@@ -98,6 +98,8 @@
             display: flex
             align-items: flex-start
             justify-content: space-between
+            &.center
+                align-items: center
             &:last-child
                 margin-bottom: 0 !important
         &-btns
@@ -159,6 +161,9 @@
             grid-template: auto / repeat(3, auto)
             gap: 50px
             justify-content: center
+            &.big
+                .home__news-item
+                    width: 100% !important
         &-item 
             width: 340px
             img 
@@ -169,6 +174,11 @@
                 box-shadow: 0 4px 20px 0 rgba(34, 34, 34, 0.05)
                 object-fit: cover
                 object-position: center top
+            &.short
+                img
+                    height: 238px
+                    margin-bottom: 0
+                    object-position: left top
     &__feedback
         &-title 
             display: flex

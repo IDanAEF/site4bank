@@ -10,7 +10,7 @@
         <div class="container">
             <div class="home__promo-text elem_animate right">
                 <h1 class="text_fz64 text_upper">Решения для банков</h1>
-                <h2>Создание сайтов для банков и финансовых компаний</h2>
+                <h2>Создание сайтов для&nbsp;банков и&nbsp;финансовых компаний</h2>
                 <button class="btn text_fz18 body-click-target" data-content="order">
                     <span>Обсудить проект</span>
                 </button>
@@ -21,15 +21,15 @@
         <div class="container">
             <div class="home__clients-left text_fz18 elem_animate right">
                 <h3 class="text_fz46 text_fw700 text_upper text_color">БОЛЕЕ 20 ЛЕТ</h3>
-                успешной работы по созданию сайтов
+                успешной работы по&nbsp;созданию сайтов
                 <h3 class="text_fz46 text_fw700 text_upper text_color">30+ ПРОЕКТОВ</h3>
                 для банков
                 <h3 class="text_fz46 text_fw700 text_upper text_color">ТОП 50</h3>
-                в рейтинге лучших разработчиков России
+                в&nbsp;рейтинге лучших разработчиков России
                 <h3 class="text_fz46 text_fw700 text_upper text_color">Большой опыт разработки</h3>
-                сайтов для банков и финансовых организаций, знание специфики разработки и поддержки банковских сайтов
+                сайтов для&nbsp;банков и&nbsp;финансовых организаций, знание специфики разработки и&nbsp;поддержки банковских сайтов
                 <h3 class="text_fz46 text_fw700 text_upper text_color">разработчики специализированных решений</h3>
-                «1C-Битрикс: Банк» и «ABO.CMS:Банк», а так же типовых сайтов банков
+                «1C-Битрикс: Банк» и&nbsp;«ABO.CMS:Банк», а так&nbsp;же типовых сайтов банков
             </div>
             <div class="home__clients-right ajax-elems init" data-vis="15" data-block="9" data-type="logos">
                 <div class="home__clients-list ajax-elems-list">
@@ -49,35 +49,35 @@
             <div class="home__adv-list text_fz18 text_center">
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv1.svg" alt="">
-                    Разработчик типовых сайтов для банков
+                    Разработчик типовых сайтов для&nbsp;банков
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv2.svg" alt="">
-                    Разработчик редакций "Банк" для CMS 1С-Битрикс и ABO
+                    Разработчик редакций "Банк" для&nbsp;CMS&nbsp;1С-Битрикс и&nbsp;ABO
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv3.svg" alt="">
-                    Проведем аудит на актуальность новых трендов
+                    Проведем аудит на&nbsp;актуальность новых трендов
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv4.svg" alt="">
-                    Интегрируем с автоматизированной банковской системой (АБС)
+                    Интегрируем с&nbsp;автоматизированной банковской системой&nbsp;(АБС)
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv5.svg" alt="">
-                    Подберем безопасный и надежный хостинг
+                    Подберем безопасный и&nbsp;надежный хостинг
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv6.svg" alt="">
-                    Обеспечим полный цикл работ по созданию сайта
+                    Обеспечим полный цикл работ по&nbsp;созданию сайта
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv7.svg" alt="">
-                    Техническая поддержка сайта без ежемесячной платы
+                    Техническая поддержка сайта без&nbsp;ежемесячной платы
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv8.svg" alt="">
-                    Опыт продвижения сайтов в поисковиках Яндекс и Google
+                    Опыт продвижения сайтов в&nbsp;поисковиках Яндекс и&nbsp;Google
                 </div>
             </div>
         </div>
@@ -85,19 +85,19 @@
     <section class="home__redact page__block pt100">
         <div class="container">
             <div class="page__block-title">
-                <h2 class="text_fz36 text_color">Специализированые редакции для банков</h2>
+                <h2 class="text_fz36 text_color">Специализированые редакции для&nbsp;банков</h2>
             </div>
             <div class="home__redact-list default-content">
                 <div class="home__redact-item elem_animate right">
                     <h4>1С-Битрикс:Банк</h4>
-                    <p>Платформа с большим функционалом для персонализированной настройки пользователем, без программирования.</p>
-                    <p>Сайты на Битриксе устойчивы к взлому. Имеют защищенность от проникновения и вредоносных атак</p>
+                    <p>Платформа с&nbsp;большим функционалом для&nbsp;персонализированной настройки пользователем, без&nbsp;программирования.</p>
+                    <p>Сайты на&nbsp;Битриксе устойчивы к&nbsp;взлому. Имеют защищенность от&nbsp;проникновения и&nbsp;вредоносных атак</p>
                     <img src="<?=IMAGES_PATH?>redactions-image1.png" alt="">
                 </div>
                 <div class="home__redact-item elem_animate left">
                     <h4>ABO.CMS:Банк</h4>
-                    <p>Универсальная платформа для разработки и управления интернет-проектами.</p>
-                    <p>Обладая модульной структурой, она позволяет гибко подстраиваться под задачи любого интернет-проекта, и предоставляет пользователю широкие возможности по его управлению</p>
+                    <p>Универсальная платформа для&nbsp;разработки и&nbsp;управления интернет-проектами.</p>
+                    <p>Обладая модульной структурой, она&nbsp;позволяет гибко подстраиваться под&nbsp;задачи любого интернет-проекта, и&nbsp;предоставляет пользователю широкие возможности по&nbsp;его управлению</p>
                     <img src="<?=IMAGES_PATH?>redactions-image2.png" alt="">
                 </div>
             </div>
@@ -109,26 +109,26 @@
             <div class="home__variants text_fz18 text_white elem_animate bott">
                 <div class="home__variants-title text_center">
                     <h3>Варианты разработки</h3>
-                    <p>Наша компания создала типовые сайты с базовым функционалом для быстрого запуска проекта и занимается разработкой индивидуальных комплексных проектов</p>
+                    <p>Наша компания создала типовые сайты с&nbsp;базовым функционалом для&nbsp;быстрого запуска проекта и&nbsp;занимается разработкой индивидуальных комплексных проектов</p>
                 </div>
                 <div class="home__variants-block">
                     <div class="home__variants-text">
                         <h3>Типовой сайт банка</h3>
-                        <p>Шаблон сайта с базовым функционалом на платформах 1С-Битрикс и ABO.CMS, созданный с соблюдением всех требований российского законодательства, для максимально быстрого запуска</p>
+                        <p>Шаблон сайта с&nbsp;базовым функционалом на&nbsp;платформах 1С-Битрикс и&nbsp;ABO.CMS, созданный с&nbsp;соблюдением всех требований российского законодательства, для&nbsp;максимально быстрого запуска</p>
                     </div>
                     <div class="home__variants-btns">
                         <a href="https://bitrix.site4bank.ru/" class="btn white short text_fz18" target="_blank">
-                            <span>Сайт на 1С-Битрикс</span>
+                            <span>Сайт на&nbsp;1С-Битрикс</span>
                         </a>
                         <a href="https://cms.site4bank.ru/" class="btn white short text_fz18" target="_blank">
-                            <span>Сайт на ABO.CMS</span>
+                            <span>Сайт на&nbsp;ABO.CMS</span>
                         </a>
                     </div>
                 </div>
                 <div class="home__variants-block">
                     <div class="home__variants-text">
                         <h3>Индивидуальная разработка</h3>
-                        <p>Создание сложных многофункциональных веб-систем, задействующий передовые технологии, для персонализации сайта вашего банка</p>
+                        <p>Создание сложных многофункциональных веб-систем, задействующий передовые технологии, для&nbsp;персонализации сайта вашего банка</p>
                     </div>
                     <div class="home__variants-btns">
                         <a href="/cases/" class="btn white short text_fz18">
@@ -144,15 +144,15 @@
     <section class="home__get page__block pt100">
         <div class="container">
             <div class="home__get-title page__block-title text_fz18 elem_animate right">
-                <h2 class="text_fz36 text_color">Cоответствует ли ваш сайт банка современным требованиям?</h2>
-                <p>Получите бесплатно чек-лист для проверки сайта и/или наше исследование «Тренды банковских сайтов» и узнайте соответствует ли ваш сайт банка современным требованиям.</p>
+                <h2 class="text_fz36 text_color">Cоответствует ли&nbsp;ваш&nbsp;сайт банка современным требованиям?</h2>
+                <p>Получите бесплатно чек-лист для&nbsp;проверки сайта и/или&nbsp;наше исследование «Тренды банковских сайтов» и&nbsp;узнайте соответствует ли&nbsp;ваш&nbsp;сайт банка современным требованиям.</p>
             </div>
             <form action="/ajax/forms.php" class="home__get-list form text_white elem_animate bott" data-success="save">
                 <input type="text" name="feedsection" value="3" hidden>
                 <input type="text" name="feedtheme" value="Запрос чек-листа" hidden>
 
                 <div class="home__get-text">
-                    <h4>Оставьте email и мы вышлем вам файл</h4>
+                    <h4>Оставьте email и&nbsp;мы вышлем вам файл</h4>
                     <div class="form-checks text_fz18 text_fw600">
                         <h6>Что вы хотите получить?</h6>
                         <label class="form-checks-item">
@@ -181,7 +181,7 @@
                         </button>
                     </div>
                     <div class="form-ps text_fz12 text_center">
-                        Нажимая «Отправить», вы соглашаетесь с <a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
+                        Нажимая «Отправить», вы соглашаетесь с&nbsp;<a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
                     </div>
                 </div>
             </form>
@@ -190,12 +190,12 @@
     <section class="home__materials page__block pb100">
         <div class="container">
             <div class="page__block-title">
-                <h2 class="text_fz36 text_color">Материалы о нас</h2>
+                <h2 class="text_fz36 text_color">Материалы о&nbsp;нас</h2>
             </div>
             <div class="home__materials-list">
                 <div class="home__materials-item elem_animate right">
                     <img src="<?=IMAGES_PATH?>materials1.svg" alt="">
-                    <h4>Решения для банков</h4>
+                    <h4>Решения для&nbsp;банков</h4>
                     <a href="/site4bank.pdf" class="btn text_fz18" target="_blank">
                         <span>Смотреть</span>
                     </a>

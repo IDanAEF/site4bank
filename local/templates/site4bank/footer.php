@@ -3,7 +3,7 @@
         <div class="container">
             <div class="footer__top">
                 <ul class="footer__menu text_fz20 text_upper text_fw600">
-                    <li><a href="/clients/" class="no-hover">Нам доверяют</a></li>
+                    <li><a href="/clients/" class="no-hover">Клиенты</a></li>
                     <li><a href="/cases/" class="no-hover">проекты</a></li>
                 </ul>
                 <ul class="footer__menu text_fz20 text_upper text_fw600">
@@ -11,15 +11,15 @@
                     <li><a href="/news/" class="no-hover">новости</a></li>
                 </ul>
                 <div class="footer__social text_fz14">
-                    <a href="" target="_blank" class="no-hover">
+                    <a href="https://join.skype.com/invite/diCzxMjPi63M" target="_blank" class="no-hover">
                         <img src="<?=IMAGES_PATH?>icons/skype.svg" alt="">
                         Skype
                     </a>
-                    <a href="" target="_blank" class="no-hover">
+                    <a href="https://t.me/TG1CPoly_bot" target="_blank" class="no-hover">
                         <img src="<?=IMAGES_PATH?>icons/telegram.svg" alt="">
                         Telegram
                     </a>
-                    <a href="" target="_blank" class="no-hover">
+                    <a href="https://api.whatsapp.com/send/?phone=79858195517" target="_blank" class="no-hover">
                         <img src="<?=IMAGES_PATH?>icons/whatsapp.svg" alt="">
                         WhatsApp
                     </a>

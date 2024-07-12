@@ -5,6 +5,7 @@
     use Bitrix\Main\Page\Asset;
 
     define('IMAGES_PATH', SITE_TEMPLATE_PATH.'/assets/images/');
+    define('CLEAR_PATH', preg_replace('/\\?.*/', '', $_SERVER['REQUEST_URI']));
 
     $assetInstance = Asset::getInstance();
 ?>
@@ -46,10 +47,10 @@
             <div class="header__right">
                 <a href="tel:+74955850659" class="header__phone no-hover">+7 (495) 585-06-59</a>
                 <div class="header__social">
-                    <a href="" target="_blank">
+                    <a href="https://t.me/TG1CPoly_bot" target="_blank">
                         <img src="<?=IMAGES_PATH?>icons/telegram.svg" alt="">
                     </a>
-                    <a href="" target="_blank">
+                    <a href="https://api.whatsapp.com/send/?phone=79858195517" target="_blank">
                         <img src="<?=IMAGES_PATH?>icons/whatsapp.svg" alt="">
                     </a>
                 </div>
@@ -75,16 +76,16 @@
             <span>Оставить заявку</span>
         </button>
         <div class="header__mobile-social">
-            <a href="" target="_blank">
+            <a href="https://join.skype.com/invite/diCzxMjPi63M" target="_blank">
                 <img src="<?=IMAGES_PATH?>icons/skype-color.svg" alt="">
             </a>
-            <a href="" target="_blank">
+            <a href="https://t.me/TG1CPoly_bot" target="_blank">
                 <img src="<?=IMAGES_PATH?>icons/telegram-color.svg" alt="">
             </a>
-            <a href="" target="_blank">
+            <a href="https://api.whatsapp.com/send/?phone=79858195517" target="_blank">
                 <img src="<?=IMAGES_PATH?>icons/whatsapp-color.svg" alt="">
             </a>
-            <a href="" target="_blank">
+            <a href="mailto:info@armex.ru" target="_blank">
                 <img src="<?=IMAGES_PATH?>icons/mail-color.svg" alt="">
             </a>
         </div>

@@ -37,6 +37,9 @@
     ];
 
     $body = '';
+
+    if (isset($_POST['feedtheme'])) $body .= "Тема: ".$_POST['feedtheme']."\n\n";
+
     foreach ($fields as $name => $descr) {
         if ($_POST[$name]) $body .= $descr." - ".$_POST[$name]."\n";
     }

@@ -15,7 +15,7 @@
             <div class="page__title">
                 <h1 class="text_fz36 text_color">Новости</h1>
             </div>
-            <div class="home__news-list text_fz18 text_center ajax-elems-list">
+            <div class="home__news-list big text_fz18 text_center ajax-elems-list">
                 
             </div>
             <button class="btn text_fz18 ajax-elems-btn">

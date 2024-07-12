@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="form-ps text_center text_fz14 text_fw300">
-            Нажимая «Отправить», вы соглашаетесь с <a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
+            Нажимая «Отправить», вы соглашаетесь с&nbsp;<a href="/privacy/" class="text_underline">политикой конфиденциальности</a>
         </div>
     </form>
 </div>
