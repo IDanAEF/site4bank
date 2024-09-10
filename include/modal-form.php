@@ -7,8 +7,8 @@
         <?php endif; ?>
     </div>
     <form action="/ajax/forms.php" class="form" data-success="<?=$success?>">
-        <input type="text" name="feedsection" value="1" hidden>
-        <input type="text" name="feedtheme" value="Заявка на обсуждение проекта" hidden>
+        <input type="text" name="feedsection" value="<?=$section?>" hidden>
+        <input type="text" name="feedtheme" value="<?=$title?>" hidden>
 
         <div class="form-col">
             <?php if ($type != 'error') : ?>

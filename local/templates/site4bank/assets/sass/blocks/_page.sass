@@ -19,6 +19,61 @@
                 margin-top: 20px
     &__title 
         margin-bottom: 30px
+    &__banner 
+        .wrap 
+            background: linear-gradient(129deg, #3697e7 36.34%, #165f9b 100%)
+            border-radius: 10px
+            position: relative
+            padding: 40px 50px
+        .text 
+            position: relative
+            z-index: 1
+            max-width: 610px
+            h1, h2, h3, h4 
+                margin-bottom: 20px
+            .btn 
+                margin-top: 45px
+        .image 
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 3%
+            max-height: 140%
+        &.small 
+            .wrap 
+                padding-left: 90px
+                padding-right: 90px
+            .image 
+                right: 7.5%
+                max-height: 188%
+        &.row 
+            .image 
+                max-height: 195%
+                left: 3%
+                right: unset
+            .text 
+                font-size: 30px
+                max-width: unset
+                display: flex
+                flex-direction: column
+                width: fit-content
+                margin-left: auto
+                .btn
+                    margin-top: 24px
+                &-row
+                    display: flex
+                    align-items: flex-end
+                    justify-content: flex-end
+                    .price
+                        display: flex
+                        align-items: flex-end
+                    span 
+                        i 
+                            font-style: normal
+                        .big 
+                            font-size: 99px
+                            line-height: 1
+                            margin: 0px 15px
     &__breadcrumbs
         padding: 40px 0px
         a 

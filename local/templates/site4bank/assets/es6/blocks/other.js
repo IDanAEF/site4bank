@@ -192,6 +192,44 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const funcsItems = document.querySelectorAll('.bitrix1c__func-item'),
+              funcsTexts = document.querySelectorAll('.bitrix1c__func-texts .item');
+
+        funcsItems.forEach((funcItem, i) => {
+            funcItem.addEventListener('click', () => {
+                funcsItems.forEach(item => item.classList.remove('active'));
+                funcsTexts.forEach(item => item.classList.remove('active'));
+
+                funcItem.classList.add('active');
+                funcsTexts[i].classList.add('active');
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
+    
+    try {
+        const contBlocks = document.querySelectorAll('.bitrix1c__func-cont');
+
+        contBlocks.forEach(contBlock => {
+            const funcsItems = contBlock.querySelectorAll('.bitrix1c__func-cont-tabs .btn'),
+                  funcsTexts = contBlock.querySelectorAll('.bitrix1c__func-cont-item');
+
+            funcsItems.forEach((funcItem, i) => {
+                funcItem.addEventListener('click', () => {
+                    funcsItems.forEach(item => item.classList.remove('active'));
+                    funcsTexts.forEach(item => item.classList.remove('active'));
+
+                    funcItem.classList.add('active');
+                    funcsTexts[i].classList.add('active');
+                });
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default other;

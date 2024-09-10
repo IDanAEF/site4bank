@@ -277,14 +277,14 @@ h6
     &.loading 
         opacity: 0.5
         pointer-events: none
-    &:hover, .active 
+    &:hover, &.active 
         background: $color-active
     &.reverse
         background: none
         border: 2px solid $color
         color: $color !important
         padding: 12px 40px
-        &:hover, .active
+        &:hover, &.active
             background: $color
             color: #fff !important
     &.white 
@@ -294,7 +294,7 @@ h6
         padding: 12px 40px
         img 
             filter: none
-        &:hover, .active
+        &:hover, &.active
             background: none 
             color: #fff !important
             img 

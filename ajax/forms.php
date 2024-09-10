@@ -58,9 +58,9 @@
 
     $el = new CIBlockElement;
     $arProps = Array(
-        "IBLOCK_ID" => 12,
+        "IBLOCK_ID" => 11,
         "IBLOCK_SECTION_ID" => $_POST['feedsection'],
-        "PROPERTY_VALUES" => [13 => $body],
+        "PROPERTY_VALUES" => [12 => $body],
         "NAME" => $_POST['feedname'] ?: $_POST['feedphone'],
         "ACTIVE" => "Y",
     );

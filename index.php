@@ -53,7 +53,7 @@
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv2.svg" alt="">
-                    Разработчик редакций "Банк" для&nbsp;CMS&nbsp;1С-Битрикс и&nbsp;ABO
+                    Разработчик редакций "Банк" для&nbsp;CMS&nbsp;1С&#8209;Битрикс и&nbsp;ABO
                 </div>
                 <div class="home__adv-item elem_animate top">
                     <img src="<?=IMAGES_PATH?>adv3.svg" alt="">
@@ -114,11 +114,11 @@
                 <div class="home__variants-block">
                     <div class="home__variants-text">
                         <h3>Типовой сайт банка</h3>
-                        <p>Шаблон сайта с&nbsp;базовым функционалом на&nbsp;платформах 1С-Битрикс и&nbsp;ABO.CMS, созданный с&nbsp;соблюдением всех требований российского законодательства, для&nbsp;максимально быстрого запуска</p>
+                        <p>Шаблон сайта с&nbsp;базовым функционалом на&nbsp;платформах 1С&#8209;Битрикс и&nbsp;ABO.CMS, созданный с&nbsp;соблюдением всех требований российского законодательства, для&nbsp;максимально быстрого запуска</p>
                     </div>
                     <div class="home__variants-btns">
                         <a href="https://bitrix.site4bank.ru/" class="btn white short text_fz18" target="_blank">
-                            <span>Сайт на&nbsp;1С-Битрикс</span>
+                            <span>Сайт на&nbsp;1С&#8209;Битрикс</span>
                         </a>
                         <a href="https://cms.site4bank.ru/" class="btn white short text_fz18" target="_blank">
                             <span>Сайт на&nbsp;ABO.CMS</span>
@@ -128,7 +128,7 @@
                 <div class="home__variants-block">
                     <div class="home__variants-text">
                         <h3>Индивидуальная разработка</h3>
-                        <p>Создание сложных многофункциональных веб-систем, задействующий передовые технологии, для&nbsp;персонализации сайта вашего банка</p>
+                        <p>Создание сложных многофункциональных веб&#8209;систем, задействующий передовые технологии, для&nbsp;персонализации сайта вашего банка</p>
                     </div>
                     <div class="home__variants-btns">
                         <a href="/cases/" class="btn white short text_fz18">
@@ -158,7 +158,7 @@
                         <label class="form-checks-item">
                             <input type="checkbox" name="feedget[0]" value="Чек-лист современного сайта банка">
                             <div class="dot"></div>
-                            <span>Чек-лист современного сайта банка</span>
+                            <span>Чек&#8209;лист современного сайта банка</span>
                         </label>
                         <label class="form-checks-item">
                             <input type="checkbox" name="feedget[1]" value="Тренды современных банковских сайтов">
@@ -215,7 +215,7 @@
             <div class="page__block-title">
                 <h2 class="text_fz36 text_color">Новости</h2>
             </div>
-            <div class="home__news-list text_fz18 text_center ajax-elems-list">
+            <div class="home__news-list big text_fz18 text_center ajax-elems-list">
                 
             </div>
             <a href="/news/" class="btn text_fz18">

@@ -1,0 +1,80 @@
+@media (max-width: 1200px)
+    .bitrix1c
+        &__func
+            &-cont 
+                &-tabs 
+                    .btn 
+                        margin-right: 10px
+                        padding-left: 30px
+                        padding-right: 30px
+                &-item 
+                    .descr 
+                        margin-left: 20px
+                    .lightbox-item 
+                        img
+                            width: 520px
+                            min-width: 529px
+@media (max-width: 992px)
+    .bitrix1c
+        &__func
+            &-cont 
+                &-tabs 
+                    margin-bottom: 20px
+                &-item 
+                    flex-direction: column-reverse
+                    align-items: center
+                    .lightbox-item
+                        width: 100%
+                        img 
+                            width: 100%
+                            min-width: unset
+                    .descr
+                        margin-left: 0
+                        margin-bottom: 20px
+                        width: 100%
+            &-wrap
+                flex-direction: column
+                align-items: flex-start
+            &-list, &-texts 
+                max-width: 100%
+                width: 100%
+            &-list 
+                margin-right: 0
+                margin-bottom: 20px
+                padding: 20px
+                overflow: auto
+                .wrap 
+                    gap: unset 
+                    display: flex
+            &-item 
+                margin-right: 20px
+                min-width: 125px
+                img 
+                    width: 50px
+                    height: 50px
+        &__abil 
+            &-list 
+                gap: 20px
+                grid-template: auto / 1fr 1fr
+            &-item 
+                .name 
+                    img 
+                        width: 50px
+                        height: 50px
+                        min-width: 50px
+@media (max-width: 576px)
+    .bitrix1c
+        &__func
+            &-list
+                padding: 20px 10px
+            &-cont 
+                &-tabs 
+                    .btn 
+                        width: 100%
+                        margin-right: 0
+                &-item 
+                    .descr 
+                        padding: 20px 10px
+        &__abil 
+            &-list 
+                grid-template: auto / 1fr

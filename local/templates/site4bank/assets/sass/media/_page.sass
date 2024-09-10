@@ -1,5 +1,39 @@
+@media (max-width: 1400px)
+    .page
+        &__banner 
+            &.small 
+                .wrap 
+                    padding-left: 50px
+                    padding-right: 50px
+                .image 
+                    right: 3%
+                    max-height: 170%
+            &.row 
+                .image
+                    left: -4%
+                .text 
+                    font-size: 26px
+                    &-row
+                        span 
+                            .big 
+                                font-size: 87px
 @media (max-width: 1200px) 
     .page
+        &__banner 
+            .wrap 
+                padding: 30px !important
+            .text 
+                max-width: 467px
+            &.row 
+                .image 
+                    max-height: 153%
+                .text 
+                    font-size: 23px
+                    &-row
+                        span 
+                            .big 
+                                font-size: 75px
+                                margin: 0px 10px
         &__block 
             padding: 40px 0px
             &.big
@@ -18,8 +52,69 @@
                     margin-top: 15px
         &__breadcrumbs
             padding: 25px 0px 40px
+@media (max-width: 992px)
+    .page
+        &__banner
+            .text
+                max-width: 425px
+                h1, h2, h3, h4
+                    margin-bottom: 10px
+            .image 
+                right: -5% !important
+                max-height: 140% !important
+                max-width: 49%
+            &.row 
+                .image 
+                    position: static
+                    transform: none
+                    display: block
+                    margin: 0 auto
+                .text 
+                    font-size: 22px
+                    &-row 
+                        justify-content: center
+                        span 
+                            .big 
+                                font-size: 89px
 @media (max-width: 768px)
     .page 
         &__breadcrumbs
             padding: 20px 0px 40px
             font-size: 14px
+        &__banner 
+            .text 
+                max-width: 100%
+                .btn 
+                    margin-top: 20px
+                    margin-right: auto
+                    margin-left: auto
+            .image 
+                max-width: 400px
+                max-height: 100% !important
+                position: static
+                transform: none
+                margin: 0 auto
+                display: block
+                width: 100%
+            &.row 
+                .text 
+                    margin-right: auto
+                    &-row 
+                        flex-direction: column
+                        align-items: center
+                        text-align: center
+                        .price 
+                            flex-direction: column
+                            align-items: center
+                            i 
+                                &:first-child
+                                    align-self: flex-start
+                                &:last-child
+                                    align-self: flex-end
+                            .big 
+                                margin: 0
+@media (max-width: 576px)
+    .page
+        &__banner 
+            .wrap 
+                padding: 20px 10px !important

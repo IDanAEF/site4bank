@@ -13,10 +13,10 @@
     <section class="cms__top text_fz18 elem_animate right">
         <div class="container">
             <h1 class="text_color">CMS для&nbsp;банков</h1>
-            <p>Мы разработали специализированные решения <br>«1С-Битрикс:Банк» и&nbsp;«ABO.CMS:Банк», а&nbsp;также типовые сайты банков</p>
+            <p>Мы разработали специализированные решения <br>«1С&#8209;Битрикс:Банк» и&nbsp;«ABO.CMS:Банк», а&nbsp;также типовые сайты банков</p>
             <div class="cms__top-btns text_fz16">
                 <a href="#bitrix1c" class="btn reverse">
-                    <span>1С-Битрикс</span>
+                    <span>1С&#8209;Битрикс</span>
                 </a>
                 <a href="#abocms" class="btn reverse">
                     <span>ABO.CMS</span>
@@ -29,14 +29,14 @@
             <div class="cms__block page__block" id="bitrix1c">
                 <div class="cms__block-info">
                     <div class="cms__block-text text_fz18 styled-ul elem_animate right">
-                        <h4>1С-Битрикс</h4>
+                        <h4>1С&#8209;Битрикс</h4>
                         <ul>
                             <li>Сайты на&nbsp;Битриксе устойчивы к&nbsp;взлому. Имеют защищенность от проникновения, вредоносных атак</li>
                             <li>Большое количество документации по работе с CMS</li>
                             <li>Большой функционал платформы. Блоки сайта могут настраиваться в&nbsp;визуальном режиме опытным пользователем, без программирования</li>
                             <li>Годовая подписка на&nbsp;бесплатное техобслуживание</li>
                         </ul>
-                        <a href="https://armexdesign.ru/solutions/bitrix/" class="btn text_fz16" target="_blank">
+                        <a href="/bank-cms/1cbitrix/" class="btn text_fz16" target="_blank">
                             <span>Подробнее </span>
                         </a>
                     </div>
@@ -63,17 +63,32 @@
                     </div>
                 </div>
                 <div class="home__variants text_fz18 text_white elem_animate bott">
-                    <div class="home__variants-block center">
+                    <div class="home__variants-title text_center">
+                        <h3>Варианты разработки</h3>
+                        <p>Наша компания создала типовые сайты с&nbsp;базовым функционалом для&nbsp;быстрого запуска проекта и&nbsp;занимается разработкой индивидуальных комплексных проектов</p>
+                    </div>
+                    <div class="home__variants-block">
                         <div class="home__variants-text">
-                            <h3>Хотите узнать, как будет <br>выглядеть сайт вашего банка?</h3>
-                            <p>Мы подготовили демоверсии сайта для представления типового функционала. Возможности веб-системы могут быть расширены при&nbsp;разработке индивидуального проекта про&nbsp;вашу компанию</p>
+                            <h3>Типовой сайт банка</h3>
+                            <p>Шаблон сайта с&nbsp;базовым функционалом на&nbsp;платформах 1С&#8209;Битрикс и&nbsp;ABO.CMS, созданный с&nbsp;соблюдением всех требований российского законодательства, для&nbsp;максимально быстрого запуска</p>
                         </div>
                         <div class="home__variants-btns">
-                            <a href="" class="btn white short text_fz18" target="_blank">
-                                <span>Сайт на 1С-Битрикс</span>
+                            <a href="https://bitrix.site4bank.ru/" class="btn white short text_fz18" target="_blank">
+                                <span>Сайт на&nbsp;1С&#8209;Битрикс</span>
                             </a>
-                            <a href="" class="btn white short text_fz18" target="_blank">
-                                <span>Сайт на ABO.CMS</span>
+                            <a href="https://cms.site4bank.ru/" class="btn white short text_fz18" target="_blank">
+                                <span>Сайт на&nbsp;ABO.CMS</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__variants-block">
+                        <div class="home__variants-text">
+                            <h3>Индивидуальная разработка</h3>
+                            <p>Создание сложных многофункциональных веб&#8209;систем, задействующий передовые технологии, для&nbsp;персонализации сайта вашего банка</p>
+                        </div>
+                        <div class="home__variants-btns">
+                            <a href="/cases/" class="btn white short text_fz18">
+                                <span>Примеры проектов</span>
                             </a>
                         </div>
                     </div>
@@ -92,7 +107,7 @@
                             <li>Система разграничений доступа</li>
                             <li>Коробочный продукт</li>
                         </ul>
-                        <a href="https://cms.site4bank.ru/" class="btn text_fz16" target="_blank">
+                        <a href="/bank-cms/abo/" class="btn text_fz16" target="_blank">
                             <span>Подробнее </span>
                         </a>
                     </div>
@@ -132,17 +147,32 @@
                     </div>
                 </div>
                 <div class="home__variants text_fz18 text_white elem_animate bott">
-                    <div class="home__variants-block center">
+                    <div class="home__variants-title text_center">
+                        <h3>Варианты разработки</h3>
+                        <p>Наша компания создала типовые сайты с&nbsp;базовым функционалом для&nbsp;быстрого запуска проекта и&nbsp;занимается разработкой индивидуальных комплексных проектов</p>
+                    </div>
+                    <div class="home__variants-block">
                         <div class="home__variants-text">
-                            <h3>Хотите узнать, как будет <br>выглядеть сайт вашего банка?</h3>
-                            <p>Мы подготовили демоверсии сайта для представления типового функционала. Возможности веб-системы могут быть расширены при&nbsp;разработке индивидуального проекта про&nbsp;вашу компанию</p>
+                            <h3>Типовой сайт банка</h3>
+                            <p>Шаблон сайта с&nbsp;базовым функционалом на&nbsp;платформах 1С&#8209;Битрикс и&nbsp;ABO.CMS, созданный с&nbsp;соблюдением всех требований российского законодательства, для&nbsp;максимально быстрого запуска</p>
                         </div>
                         <div class="home__variants-btns">
                             <a href="https://bitrix.site4bank.ru/" class="btn white short text_fz18" target="_blank">
-                                <span>Сайт на 1С-Битрикс</span>
+                                <span>Сайт на&nbsp;1С&#8209;Битрикс</span>
                             </a>
-                            <a href="https://demo.site4bank.ru/" class="btn white short text_fz18" target="_blank">
-                                <span>Сайт на ABO.CMS</span>
+                            <a href="https://cms.site4bank.ru/" class="btn white short text_fz18" target="_blank">
+                                <span>Сайт на&nbsp;ABO.CMS</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__variants-block">
+                        <div class="home__variants-text">
+                            <h3>Индивидуальная разработка</h3>
+                            <p>Создание сложных многофункциональных веб&#8209;систем, задействующий передовые технологии, для&nbsp;персонализации сайта вашего банка</p>
+                        </div>
+                        <div class="home__variants-btns">
+                            <a href="/cases/" class="btn white short text_fz18">
+                                <span>Примеры проектов</span>
                             </a>
                         </div>
                     </div>
